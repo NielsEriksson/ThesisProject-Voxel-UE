@@ -1,0 +1,17 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-ThesisVoxelWorld.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\ThesisVoxelWorldEditor\Development\Engine\SharedPCH.Engine.Cpp20.h.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\ChunkBase.gen.cpp.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\ThesisVoxelWorld.init.gen.cpp.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\ChunkBase.cpp.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\ChunkMeshData.cpp.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\Enums.cpp.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\ThesisVoxelWorld.cpp.obj"
+"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\Default.rc2.res"
+/OUT:"D:\Git\test11\ThesisVoxelWorld\Intermediate\Build\Win64\x64\UnrealEditor\Development\ThesisVoxelWorld\UnrealEditor-ThesisVoxelWorld.lib"

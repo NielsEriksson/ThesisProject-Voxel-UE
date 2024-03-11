@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ThesisVoxelWorld",
+			"Path": "..\\Source\\ThesisVoxelWorld.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ThesisVoxelWorldEditor",
+			"Path": "..\\Source\\ThesisVoxelWorldEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
