@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ThesisVoxelWorldModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+870780077da8bb0cf8dbcc62d63ac45baab8ee70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b8244cc24fc7ad10ec6440e5c9e3ae791d99764")]
 [assembly: System.Reflection.AssemblyProductAttribute("ThesisVoxelWorldModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ThesisVoxelWorldModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

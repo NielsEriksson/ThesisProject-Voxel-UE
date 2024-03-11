@@ -1,7 +1,7 @@
 #pragma once
-
 #include "CoreMinimal.h"
-//#include "ChunkMeshData.generated.h"
+#include "ChunkMeshData.generated.h"
+
 
 USTRUCT()
 struct FChunkMeshData

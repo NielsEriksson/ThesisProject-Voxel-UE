@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
-
-//#include "ProceduralMeshComponent.h"
 #include "ChunkBase.h"
+#include "ProceduralMeshComponent.h"
+
 
 
 // Sets default values
@@ -13,10 +13,10 @@ AChunkBase::AChunkBase()
 	Mesh = CreateDefaultSubobject<UProceduralMeshComponent>("Mesh");
 
 	// Mesh Settings
-	//Mesh->SetCastShadow(false);
+	Mesh->SetCastShadow(false);
 
 	// Set Mesh as root
-	//SetRootComponent(Mesh);
+	SetRootComponent(Mesh);
 }
 
 // Called when the game starts or when spawned
@@ -36,22 +36,22 @@ void AChunkBase::BeginPlay()
 }
 void AChunkBase::GenerateHeightMap()
 {
-	Generate3DHeightMap(GetActorLocation() / 100);
+	Generate2DHeightMap(GetActorLocation() / 100);
 }
 
 void AChunkBase::ApplyMesh() const
 {
-	////Mesh->SetMaterial(0, Material);
-	////Mesh->CreateMeshSection(
-	//	0,
-	//	MeshData.Vertices,
-	//	MeshData.Triangles,
-	//	MeshData.Normals,
-	//	MeshData.UV0,
-	//	MeshData.Colors,
-	//	TArray<FProcMeshTangent>(),
-	//	true
-	//);
+	Mesh->SetMaterial(0, Material);
+	Mesh->CreateMeshSection(
+		0,
+		MeshData.Vertices,
+		MeshData.Triangles,
+		MeshData.Normals,
+		MeshData.UV0,
+		MeshData.Colors,
+		TArray<FProcMeshTangent>(),
+		false
+	);
 }
 
 void AChunkBase::ClearMesh()

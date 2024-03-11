@@ -35,13 +35,7 @@ template<> THESISVOXELWORLD_API UScriptStruct* StaticStruct<FChunkMeshData>()
 	};
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UScriptStruct_FChunkMeshData_Statics::Struct_MetaDataParams[] = {
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//#include \"ChunkMeshData.generated.h\"\n" },
-#endif
 		{ "ModuleRelativePath", "ChunkMeshData.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "#include \"ChunkMeshData.generated.h\"" },
-#endif
 	};
 #endif
 	void* Z_Construct_UScriptStruct_FChunkMeshData_Statics::NewStructOps()
@@ -74,9 +68,9 @@ template<> THESISVOXELWORLD_API UScriptStruct* StaticStruct<FChunkMeshData>()
 		static const FStructRegisterCompiledInInfo ScriptStructInfo[];
 	};
 	const FStructRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkMeshData_h_Statics::ScriptStructInfo[] = {
-		{ FChunkMeshData::StaticStruct, Z_Construct_UScriptStruct_FChunkMeshData_Statics::NewStructOps, TEXT("ChunkMeshData"), &Z_Registration_Info_UScriptStruct_ChunkMeshData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FChunkMeshData), 2834851683U) },
+		{ FChunkMeshData::StaticStruct, Z_Construct_UScriptStruct_FChunkMeshData_Statics::NewStructOps, TEXT("ChunkMeshData"), &Z_Registration_Info_UScriptStruct_ChunkMeshData, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FChunkMeshData), 394519878U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkMeshData_h_1860352265(TEXT("/Script/ThesisVoxelWorld"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkMeshData_h_233723308(TEXT("/Script/ThesisVoxelWorld"),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkMeshData_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkMeshData_h_Statics::ScriptStructInfo),
 		nullptr, 0);

@@ -1,0 +1,20 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\unrealeditor\\inc\\thesisvoxelworld\\uht\\chunkworld.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\x64\\thesisvoxelworldeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\thesisvoxelworld\\definitions.thesisvoxelworld.h",
+            "d:\\git\\test11\\thesisvoxelworld\\source\\thesisvoxelworld\\chunkworld.h",
+            "d:\\git\\test11\\thesisvoxelworld\\source\\thesisvoxelworld\\enums.h",
+            "d:\\git\\test11\\thesisvoxelworld\\source\\thesisvoxelworld\\chunkbase.h",
+            "d:\\git\\test11\\thesisvoxelworld\\source\\thesisvoxelworld\\chunkmeshdata.h",
+            "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\unrealeditor\\inc\\thesisvoxelworld\\uht\\chunkmeshdata.generated.h",
+            "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\unrealeditor\\inc\\thesisvoxelworld\\uht\\chunkbase.generated.h",
+            "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\unrealeditor\\inc\\thesisvoxelworld\\uht\\chunkworld.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

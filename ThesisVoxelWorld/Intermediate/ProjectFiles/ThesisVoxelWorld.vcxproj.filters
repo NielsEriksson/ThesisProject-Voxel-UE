@@ -42,10 +42,28 @@
     <ClInclude Include="..\..\Source\ThesisVoxelWorld\ChunkMeshData.h">
       <Filter>Source\ThesisVoxelWorld</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\ChunkWorld.cpp">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\ChunkWorld.h">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClInclude>
     <ClCompile Include="..\..\Source\ThesisVoxelWorld\Enums.cpp">
       <Filter>Source\ThesisVoxelWorld</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ThesisVoxelWorld\Enums.h">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\GreedyChunk.cpp">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\GreedyChunk.h">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\NaiveChunk.cpp">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\NaiveChunk.h">
       <Filter>Source\ThesisVoxelWorld</Filter>
     </ClInclude>
     <None Include="..\..\Source\ThesisVoxelWorld\ThesisVoxelWorld.Build.cs">

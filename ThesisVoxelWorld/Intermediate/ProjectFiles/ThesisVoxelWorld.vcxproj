@@ -126,12 +126,30 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\ThesisVoxelWorld\ChunkMeshData.h"/>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\ChunkWorld.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\ChunkWorld.h"/>
     <ClCompile Include="..\..\Source\ThesisVoxelWorld\Enums.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\ThesisVoxelWorld\Enums.h"/>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\GreedyChunk.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\GreedyChunk.h"/>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\NaiveChunk.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\NaiveChunk.h"/>
     <None Include="..\..\Source\ThesisVoxelWorld\ThesisVoxelWorld.Build.cs"/>
     <ClCompile Include="..\..\Source\ThesisVoxelWorld\ThesisVoxelWorld.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
