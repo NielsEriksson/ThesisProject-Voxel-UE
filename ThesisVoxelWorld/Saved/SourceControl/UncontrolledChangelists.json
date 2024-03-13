@@ -6,7 +6,16 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"D:/Git/test11/ThesisVoxelWorld/Content/StarterContent/Particles/P_Ambient_Dust.uasset",
-				"D:/Git/test11/ThesisVoxelWorld/Content/MainScene.umap"
+				"D:/Git/test11/ThesisVoxelWorld/Content/MainScene.umap",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Textures/VoxelTextureArray.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Material/VoxelMaterial.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Textures/dirt.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Textures/dirt_grass.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Textures/grass_top.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Textures/gravel_stone.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/VoxelPlayerController.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Blueprints/VoxelPlayerController.uasset",
+				"D:/Git/test11/ThesisVoxelWorld/Content/Blueprints/MyGameMode.uasset"
 			]
 		}
 	]

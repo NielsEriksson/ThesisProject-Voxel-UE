@@ -18,7 +18,7 @@ void AGreedyChunk::Generate2DHeightMap(const FVector Position)
 			const float Xpos = x + Position.X;
 			const float Ypos = y + Position.Y;
 
-			const int Height = FMath::RandRange(Size - 3, Size);
+			const int Height = FMath::RandRange(Size - 7, Size);
 
 			for (int z = 0; z < Size; z++)
 			{

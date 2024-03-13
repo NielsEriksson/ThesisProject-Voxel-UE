@@ -1,0 +1,15 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\unrealeditor\\inc\\thesisvoxelworld\\uht\\voxelfunctionlibrary.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\x64\\thesisvoxelworldeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\thesisvoxelworld\\definitions.thesisvoxelworld.h",
+            "d:\\git\\test11\\thesisvoxelworld\\source\\thesisvoxelworld\\voxelfunctionlibrary.h",
+            "d:\\git\\test11\\thesisvoxelworld\\intermediate\\build\\win64\\unrealeditor\\inc\\thesisvoxelworld\\uht\\voxelfunctionlibrary.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

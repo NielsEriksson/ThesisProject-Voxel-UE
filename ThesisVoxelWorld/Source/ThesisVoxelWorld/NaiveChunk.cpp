@@ -18,12 +18,15 @@ void ANaiveChunk::Generate2DHeightMap(const FVector Position)
 			const float Xpos = x + Position.X;
 			const float ypos = y + Position.Y;
 
-			const int Height = FMath::RandRange(Size - 3, Size);
+			const int Height = FMath::RandRange(Size - 5, Size);
 
 			for (int z = 0; z < Height; z++)
 			{
-				Blocks[GetBlockIndex(x, y, z)] = EBlock::Stone;
+				if (z < Height - 3) Blocks[GetBlockIndex(x, y, z)] = EBlock::Stone;
+				else if (z < Height - 1) Blocks[GetBlockIndex(x, y, z)] = EBlock::Dirt;
+				else if (z == Height - 1) Blocks[GetBlockIndex(x, y, z)] = EBlock::Grass;
 			}
+
 
 			for (int z = Height; z < Size; z++)
 			{
@@ -72,7 +75,7 @@ void ANaiveChunk::GenerateMesh()
 					{
 						if (Check(GetPositionInDirection(Direction, Position)))
 						{
-							CreateFace(Direction, Position * 100);
+							CreateFace(Direction, Position * 100, Blocks[GetBlockIndex(x, y, z)]);
 						}
 					}
 				}
@@ -88,16 +91,22 @@ bool ANaiveChunk::Check(const FVector Position) const
 	return Blocks[GetBlockIndex(Position.X, Position.Y, Position.Z)] == EBlock::Air;
 }
 
-void ANaiveChunk::CreateFace(const EDirection Direction, const FVector Position)
+void ANaiveChunk::CreateFace(const EDirection Direction, const FVector Position, EBlock BlockType)
 {
-	const auto Color = FColor::MakeRandomColor();
+	const auto Color = FColor(0, 0, 0, GetTextureIndex(BlockType, Direction));
 	const auto Normal = GetNormal(Direction);
 
 	MeshData.Vertices.Append(GetFaceVertices(Direction, Position));
 	MeshData.Triangles.Append({ VertexCount + 3, VertexCount + 2, VertexCount, VertexCount + 2, VertexCount + 1, VertexCount });
 	MeshData.Normals.Append({ Normal, Normal, Normal, Normal });
 	MeshData.Colors.Append({ Color, Color, Color, Color });
-	MeshData.UV0.Append({ FVector2D(1,1), FVector2D(1,0), FVector2D(0,0), FVector2D(0,1) });
+	
+	MeshData.UV0.Append({ FVector2D(1, 0),
+		FVector2D(0, 0),
+		FVector2D(0, 1),
+		FVector2D(1, 1) });
+
+
 
 	VertexCount += 4;
 }
@@ -152,4 +161,18 @@ void ANaiveChunk::ModifyVoxelData(const FIntVector Position, const EBlock Block)
 int ANaiveChunk::GetBlockIndex(const int X, const int Y, const int Z) const
 {
 	return Z * Size * Size + Y * Size + X;
+}
+
+int ANaiveChunk::GetTextureIndex(const EBlock Block, const EDirection direction) const
+{
+	switch (Block) {
+	case EBlock::Grass:
+	{
+		if (direction == EDirection::Up) return 0;
+		return 1;
+	}
+	case EBlock::Dirt: return 2;
+	case EBlock::Stone: return 3;
+	default: return 255;
+	}
 }

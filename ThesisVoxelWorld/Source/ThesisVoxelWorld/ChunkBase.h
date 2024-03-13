@@ -27,6 +27,7 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Chunk")
 	void ModifyVoxel(const FIntVector Position, const EBlock Block);
 
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;

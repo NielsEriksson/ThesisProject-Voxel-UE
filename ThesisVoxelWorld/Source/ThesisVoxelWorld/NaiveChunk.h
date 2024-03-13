@@ -44,9 +44,10 @@ private:
 	};
 
 	bool Check(FVector Position) const;
-	void CreateFace(EDirection Direction, FVector Position);
+	void CreateFace(EDirection Direction, FVector Position, EBlock BlockType);
 	TArray<FVector> GetFaceVertices(EDirection Direction, FVector Position) const;
 	FVector GetPositionInDirection(EDirection Direction, FVector Position) const;
 	FVector GetNormal(EDirection Direction) const;
 	int GetBlockIndex(int X, int Y, int Z) const;
+	int GetTextureIndex(EBlock Block, EDirection Direction) const;
 };

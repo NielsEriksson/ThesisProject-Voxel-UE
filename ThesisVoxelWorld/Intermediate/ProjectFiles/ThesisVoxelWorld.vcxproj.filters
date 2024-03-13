@@ -75,5 +75,11 @@
     <ClInclude Include="..\..\Source\ThesisVoxelWorld\ThesisVoxelWorld.h">
       <Filter>Source\ThesisVoxelWorld</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\ThesisVoxelWorld\VoxelFunctionLibrary.cpp">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ThesisVoxelWorld\VoxelFunctionLibrary.h">
+      <Filter>Source\ThesisVoxelWorld</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
