@@ -54,12 +54,6 @@
     <ClInclude Include="..\..\Source\ThesisVoxelWorld\Enums.h">
       <Filter>Source\ThesisVoxelWorld</Filter>
     </ClInclude>
-    <ClCompile Include="..\..\Source\ThesisVoxelWorld\GreedyChunk.cpp">
-      <Filter>Source\ThesisVoxelWorld</Filter>
-    </ClCompile>
-    <ClInclude Include="..\..\Source\ThesisVoxelWorld\GreedyChunk.h">
-      <Filter>Source\ThesisVoxelWorld</Filter>
-    </ClInclude>
     <ClCompile Include="..\..\Source\ThesisVoxelWorld\NaiveChunk.cpp">
       <Filter>Source\ThesisVoxelWorld</Filter>
     </ClCompile>

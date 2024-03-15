@@ -21,12 +21,15 @@ public:
 	UPROPERTY(EditInstanceOnly, Category = "Chunk")
 	TObjectPtr<UMaterialInterface> Material;
 
-	UPROPERTY(EditInstanceOnly, Category = "Chunk")
+	UPROPERTY(EditInstanceOnly, Category = "Chunk", BlueprintReadWrite)
 	int Size = 32;
 
 	UPROPERTY(EditInstanceOnly, Category = "Height Map")
-	float Frequency = 0.03f;
-
+	float FrequencyMin = 0.02f;
+	UPROPERTY(EditInstanceOnly, Category = "Height Map")
+	float FrequencyMax = 0.15f;
+	UPROPERTY(EditInstanceOnly, Category = "Height Map")
+	float HeightMin;
 	// Sets default values for this actor's properties
 	AChunkWorld();
 
@@ -38,4 +41,5 @@ private:
 	int ChunkCount;
 
 	void Generate2DWorld();
+	void GenerateAirLayer();
 };

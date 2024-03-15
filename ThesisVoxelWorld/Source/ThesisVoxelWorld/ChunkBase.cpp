@@ -34,9 +34,12 @@ void AChunkBase::BeginPlay()
 	ApplyMesh();
 	
 }
+
+
 void AChunkBase::GenerateHeightMap()
 {
-	Generate2DHeightMap(GetActorLocation() / 100);
+	if (!isAir) Generate2DHeightMap(GetActorLocation() / 100);
+	else GenerateAirChunk((GetActorLocation() / 100));
 }
 
 void AChunkBase::ApplyMesh() const

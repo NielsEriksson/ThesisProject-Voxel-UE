@@ -48,9 +48,17 @@ void EmptyLinkFunctionForGeneratedCodeChunkWorld() {}
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_Size;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Frequency_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FrequencyMin_MetaData[];
 #endif
-		static const UECodeGen_Private::FFloatPropertyParams NewProp_Frequency;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_FrequencyMin;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FrequencyMax_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_FrequencyMax;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HeightMin_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_HeightMin;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -93,20 +101,36 @@ void EmptyLinkFunctionForGeneratedCodeChunkWorld() {}
 		{ "ModuleRelativePath", "ChunkWorld.h" },
 	};
 #endif
-	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChunkWorld, Size), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size_MetaData), Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size_MetaData) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size = { "Size", nullptr, (EPropertyFlags)0x0010000000000805, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChunkWorld, Size), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size_MetaData), Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChunkWorld_Statics::NewProp_Frequency_MetaData[] = {
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMin_MetaData[] = {
 		{ "Category", "Height Map" },
 		{ "ModuleRelativePath", "ChunkWorld.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChunkWorld_Statics::NewProp_Frequency = { "Frequency", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChunkWorld, Frequency), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChunkWorld_Statics::NewProp_Frequency_MetaData), Z_Construct_UClass_AChunkWorld_Statics::NewProp_Frequency_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMin = { "FrequencyMin", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChunkWorld, FrequencyMin), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMin_MetaData), Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMin_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMax_MetaData[] = {
+		{ "Category", "Height Map" },
+		{ "ModuleRelativePath", "ChunkWorld.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMax = { "FrequencyMax", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChunkWorld, FrequencyMax), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMax_MetaData), Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMax_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AChunkWorld_Statics::NewProp_HeightMin_MetaData[] = {
+		{ "Category", "Height Map" },
+		{ "ModuleRelativePath", "ChunkWorld.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AChunkWorld_Statics::NewProp_HeightMin = { "HeightMin", nullptr, (EPropertyFlags)0x0010000000000801, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AChunkWorld, HeightMin), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AChunkWorld_Statics::NewProp_HeightMin_MetaData), Z_Construct_UClass_AChunkWorld_Statics::NewProp_HeightMin_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AChunkWorld_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_ChunkType,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_DrawDistance,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_Material,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_Size,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_Frequency,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMin,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_FrequencyMax,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AChunkWorld_Statics::NewProp_HeightMin,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AChunkWorld_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AChunkWorld>::IsAbstract,
@@ -146,9 +170,9 @@ void EmptyLinkFunctionForGeneratedCodeChunkWorld() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkWorld_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AChunkWorld, AChunkWorld::StaticClass, TEXT("AChunkWorld"), &Z_Registration_Info_UClass_AChunkWorld, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AChunkWorld), 1741900676U) },
+		{ Z_Construct_UClass_AChunkWorld, AChunkWorld::StaticClass, TEXT("AChunkWorld"), &Z_Registration_Info_UClass_AChunkWorld, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AChunkWorld), 1585324290U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkWorld_h_568696447(TEXT("/Script/ThesisVoxelWorld"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkWorld_h_3717399966(TEXT("/Script/ThesisVoxelWorld"),
 		Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkWorld_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Git_test11_ThesisVoxelWorld_Source_ThesisVoxelWorld_ChunkWorld_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

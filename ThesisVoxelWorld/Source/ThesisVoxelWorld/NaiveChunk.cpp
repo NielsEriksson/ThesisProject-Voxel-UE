@@ -16,9 +16,12 @@ void ANaiveChunk::Generate2DHeightMap(const FVector Position)
 		for (int y = 0; y < Size; y++)
 		{
 			const float Xpos = x + Position.X;
-			const float ypos = y + Position.Y;
-
-			const int Height = FMath::RandRange(Size - 5, Size);
+			const float Ypos = y + Position.Y;
+			float noise = FMath::PerlinNoise2D(FVector2D(Xpos * Frequency, Ypos * Frequency)) + 1; // Lower frequency
+			
+			UE_LOG(LogTemp, Warning, TEXT("Noise value is : %f"), noise);
+			const int Height = FMath::Clamp((noise) *( Size / 2), HeightMin, Size);
+			UE_LOG(LogTemp, Warning, TEXT("Height value is : %d"), Height);
 
 			for (int z = 0; z < Height; z++)
 			{
@@ -54,6 +57,20 @@ void ANaiveChunk::Generate3DHeightMap(const FVector Position)
 				{
 					Blocks[GetBlockIndex(x, y, z)] = EBlock::Stone;
 				}
+			}
+		}
+	}
+}
+
+void ANaiveChunk::GenerateAirChunk(FVector Position)
+{
+	for (int x = 0; x < Size; ++x)
+	{
+		for (int y = 0; y < Size; ++y)
+		{
+			for (int z = 0; z < Size; ++z)
+			{				
+				Blocks[GetBlockIndex(x, y, z)] = EBlock::Air;
 			}
 		}
 	}
